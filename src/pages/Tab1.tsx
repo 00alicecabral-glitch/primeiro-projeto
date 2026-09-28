@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonSearchbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
@@ -16,7 +16,11 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <ExploreContainer name="Tab 1 page" /><IonSearchbar></IonSearchbar>
+      <IonSearchbar placeholder="Custom Placeholder"></IonSearchbar>
+      <IonSearchbar disabled={true} placeholder="Disabled"></IonSearchbar>
+      <IonSearchbar value="Value"></IonSearchbar>
+      <IonSearchbar animated={true} placeholder="Animated"></IonSearchbar>
       </IonContent>
     </IonPage>
   );
